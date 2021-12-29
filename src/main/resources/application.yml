@@ -9,3 +9,15 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+  cache:
+    type: redis
+    redis:
+      cache-null-values: true
+      time-to-live: 60000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

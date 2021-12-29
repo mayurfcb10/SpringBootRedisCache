@@ -38,7 +38,7 @@ public class EmployeeRestController {
 		return service.getOneEmployee(id);
 	}
 
-	@PutMapping("/modify/{empId}")
+	@PutMapping("/modify/{id}")
 	public Employee updateEmployee(@PathVariable Integer id, @RequestBody Employee e) {
 		return service.updateEmployee(id, e);
 	}
